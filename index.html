@@ -4,84 +4,213 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yowsoft Official 🔥 WhatsApp | JadiBot Public</title>
+
 <style>
-body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#1b0033,#050012);display:flex;flex-direction:column;align-items:center;color:#fff;font-family:Arial}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  background:radial-gradient(circle at top,#1b0033,#050012);
+  display:flex;flex-direction:column;align-items:center;
+  color:#fff;font-family:Arial,Helvetica,sans-serif
+}
 a{text-decoration:none}
-nav{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;width:100%;box-sizing:border-box}
+nav{
+  padding:20px 40px;display:flex;justify-content:space-between;
+  align-items:center;width:100%
+}
 nav h1{color:#ff00ff;text-shadow:0 0 15px #00ffff}
-nav span{background:#00ffff;color:#000;padding:6px 14px;border-radius:20px;font-weight:700}
+nav span{
+  background:#00ffff;color:#000;padding:6px 14px;
+  border-radius:20px;font-weight:700
+}
 .hero{text-align:center;padding:80px 20px}
-.hero h2{font-size:2.5rem;color:#ff00ff;text-shadow:0 0 20px #00ffff}
+.hero h2{
+  font-size:2.5rem;color:#ff00ff;
+  text-shadow:0 0 20px #00ffff
+}
 .hero p{margin-top:15px;opacity:.9;font-size:1.1rem}
-.hero a{display:inline-block;margin-top:30px;padding:16px 35px;background:linear-gradient(45deg,#ff00ff,#00ffff);color:#000;font-weight:800;border-radius:30px;box-shadow:0 0 30px #ff00ff;transition:.3s}
+.hero a{
+  display:inline-block;margin-top:30px;
+  padding:16px 35px;
+  background:linear-gradient(45deg,#ff00ff,#00ffff);
+  color:#000;font-weight:800;border-radius:30px;
+  box-shadow:0 0 30px #ff00ff;transition:.3s
+}
 .hero a:hover{transform:scale(1.08)}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:40px;width:90%;max-width:1000px}
-.card{background:rgba(0,0,0,.5);padding:25px;border-radius:20px;box-shadow:0 0 20px #00ffff;transition:.3s;text-align:center}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;padding:40px;width:90%;max-width:1000px
+}
+.card{
+  background:rgba(0,0,0,.5);
+  padding:25px;border-radius:20px;
+  box-shadow:0 0 20px #00ffff;
+  transition:.3s;text-align:center
+}
 .card:hover{transform:translateY(-8px)}
 .card h3{color:#00ffff}
-.how{padding:60px 20px;text-align:center}
+
+.how{padding:60px 20px;text-align:center;width:100%}
 .how h2{color:#ff00ff;text-shadow:0 0 15px #00ffff}
-.steps{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
-.step{background:#111;padding:20px;border-radius:18px;width:260px;box-shadow:0 0 15px #ff00ff}
-input{width:100%;padding:14px;border-radius:12px;border:none;margin:10px 0;text-align:center;font-size:16px}
-.btn{width:100%;padding:14px;background:linear-gradient(45deg,#ff00ff,#00ffff);color:#000;font-weight:700;border:none;border-radius:15px;cursor:pointer;margin-bottom:10px}
-#result{margin-top:15px;font-size:1rem;text-align:center;color:#00ffff}
-.back{display:block;margin-top:15px;text-align:center;color:#00ffff}
-footer{margin-top:60px;padding:30px;text-align:center;background:rgba(0,0,0,.6);font-size:.95rem;width:100%;box-sizing:border-box}
-.container{max-width:400px;margin:20px auto;text-align:center}
+
+.steps{
+  margin-top:30px;display:flex;flex-wrap:wrap;
+  justify-content:center;gap:20px
+}
+.step{
+  background:#111;padding:20px;border-radius:18px;
+  width:260px;box-shadow:0 0 15px #ff00ff
+}
+
+.container{
+  max-width:420px;margin:30px auto;text-align:center
+}
+input{
+  width:100%;padding:14px;border-radius:12px;
+  border:none;margin:10px 0;text-align:center;font-size:16px
+}
+.btn{
+  width:100%;padding:14px;
+  background:linear-gradient(45deg,#ff00ff,#00ffff);
+  color:#000;font-weight:700;border:none;
+  border-radius:15px;cursor:pointer;margin-bottom:10px
+}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+#result{margin-top:15px;font-size:1rem;color:#00ffff}
+
+.rules{
+  max-width:900px;margin:40px auto;
+  padding:35px;background:rgba(0,0,0,.55);
+  border-radius:22px;box-shadow:0 0 25px #ff00ff
+}
+.rules h2{
+  text-align:center;color:#ff00ff;
+  margin-bottom:20px;text-shadow:0 0 15px #00ffff
+}
+.rules ul{
+  list-style:none;padding:0;
+  display:grid;gap:12px
+}
+.rules li{
+  background:#111;padding:14px 18px;
+  border-radius:14px;box-shadow:0 0 10px #00ffff
+}
+
+footer{
+  margin-top:60px;padding:30px;text-align:center;
+  background:rgba(0,0,0,.6);font-size:.95rem;width:100%
+}
+.footer-btns{
+  margin-top:15px;display:flex;gap:15px;
+  justify-content:center;flex-wrap:wrap
+}
+.footer-btns a{
+  padding:12px 22px;border-radius:20px;
+  background:linear-gradient(45deg,#ff00ff,#00ffff);
+  color:#000;font-weight:700;
+  box-shadow:0 0 15px #ff00ff
+}
 </style>
 </head>
+
 <body>
 
 <nav>
-<h1>Yowsoft Official 🔥 WhatsApp</h1>
-<span>PUBLIC MODE</span>
+  <h1>Yowsoft Official 🔥 WhatsApp</h1>
+  <span>PUBLIC MODE</span>
 </nav>
 
 <section class="hero">
-<h2>JadiBot WhatsApp</h2>
-<p>Jadikan WhatsApp kamu sebagai BOT dengan sistem JadiBot public, cepat & stabil</p>
-<a href="#pairing">🚀 Mulai Pairing</a>
+  <h2>JadiBot WhatsApp</h2>
+  <p>Jadikan WhatsApp kamu sebagai BOT dengan sistem JadiBot Public</p>
+  <a href="#pairing">🚀 Mulai Pairing</a>
 </section>
 
 <section class="features">
-<div class="card"><h3>⚡ JadiBot Public</h3><p>Semua user bisa daftar & pairing tanpa ribet</p></div>
-<div class="card"><h3>📱 Support HP</h3><p>Bisa diakses dari Android, iOS, PC</p></div>
-<div class="card"><h3>🛡️ Aman & Legal</h3><p>Tanpa exploit, stabil untuk jangka panjang</p></div>
-<div class="card"><h3>🎨 UI Futuristik</h3><p>Tampilan modern ala Yowsoft Official 🔥</p></div>
+  <div class="card"><h3>⚡ JadiBot Public</h3><p>Bisa dipakai semua user</p></div>
+  <div class="card"><h3>📱 Multi Device</h3><p>HP & PC support</p></div>
+  <div class="card"><h3>🛡️ Aman</h3><p>Tanpa exploit</p></div>
+  <div class="card"><h3>🎨 Futuristik</h3><p>Neon UI modern</p></div>
 </section>
 
 <section class="how" id="pairing">
-<h2>Cara Menggunakan JadiBot</h2>
-<div class="steps">
-<div class="step">1️⃣ Masukkan nomor WhatsApp</div>
-<div class="step">2️⃣ Dapatkan kode pairing</div>
-<div class="step">3️⃣ Hubungkan di WA Perangkat Tertaut</div>
-</div>
-<div class="container">
-<h2>🔗 Pairing WhatsApp</h2>
-<input type="text" id="number" placeholder="628xxxxxxxxxx">
-<button class="btn" onclick="pairing()">🚀 Generate Pairing</button>
-<div id="result"></div>
-</div>
+  <h2>Cara Pairing</h2>
+
+  <div class="steps">
+    <div class="step">1️⃣ Masukkan nomor</div>
+    <div class="step">2️⃣ Generate kode</div>
+    <div class="step">3️⃣ Hubungkan di WA</div>
+  </div>
+
+  <div class="container">
+    <h2>🔗 Pairing WhatsApp</h2>
+
+    <input type="text" id="number" placeholder="628xxxxxxxxxx">
+
+    <label style="display:flex;gap:10px;justify-content:center;align-items:center;font-size:.95rem">
+      <input type="checkbox" id="agree">
+      Saya setuju dengan <b>Rules JadiBot</b>
+    </label>
+
+    <button class="btn" id="pairBtn" onclick="pairing()" disabled>
+      🚀 Generate Pairing
+    </button>
+
+    <div id="result"></div>
+  </div>
+</section>
+
+<section class="rules">
+  <h2>📜 Rules Penting</h2>
+  <ul>
+    <li>🚫 <b>WAJIB menggunakan nomor cadangan</b>, DILARANG menggunakan nomor utama</li>
+    <li>❌ Dilarang spam, scam, phishing, penipuan</li>
+    <li>❌ Dilarang exploit, bug, crash, aktivitas ilegal</li>
+    <li>⚠️ Pelanggaran = banned permanen</li>
+    <li>🔐 Data pairing tidak disimpan</li>
+    <li>📴 Bot bisa restart sewaktu-waktu</li>
+    <li>👤 Tanggung jawab penggunaan ada pada user</li>
+    <li>🔄 Rules dapat berubah kapan saja</li>
+    <li>✅ Lanjut pairing = setuju semua rules</li>
+  </ul>
 </section>
 
 <footer>
-<p><b>Developer</b>: Rafz | +62 815‑2190‑2652</p>
-<p><b>Owner</b>: Rendyy | +62 858‑2965‑8816</p>
-<p>© 2026 Yowsoft Official 🔥 WhatsApp</p>
+  <p>Yowsoft Official 🔥 WhatsApp</p>
+
+  <div class="footer-btns">
+    <a href="https://wa.me/6281521902652" target="_blank">👨‍💻 Developer</a>
+    <a href="https://wa.me/6285829658816" target="_blank">👑 Owner</a>
+  </div>
+
+  <p style="margin-top:15px;opacity:.7">© 2026 Yowsoft Official 🔥</p>
 </footer>
 
 <script>
-function pairing() {
-  const num = document.getElementById('number').value;
-  const res = document.getElementById('result');
-  if(!num || !num.startsWith('62')) {
-    res.innerHTML = '❌ Nomor tidak valid. Gunakan format 62xxxxxxxxxx';
+const agree=document.getElementById('agree');
+const btn=document.getElementById('pairBtn');
+
+agree.addEventListener('change',()=>{
+  btn.disabled=!agree.checked;
+});
+
+function pairing(){
+  const num=document.getElementById('number').value;
+  const res=document.getElementById('result');
+
+  if(!num || !num.startsWith('62')){
+    res.innerHTML='❌ Nomor tidak valid (62xxxxxxxxxx)';
     return;
   }
-  const code = 'YOWWSOFT';
-  res.innerHTML = `<p>✅ Pairing request diterima</p><p><b>Kode:</b> ${code}</p><small>Buka WhatsApp → Perangkat Tertaut</small>`;
+
+  res.innerHTML=`
+    ✅ Pairing diterima<br>
+    <b>Kode:</b> YOWWSOFT<br>
+    <small>Buka WhatsApp → Perangkat Tertaut</small>
+  `;
 }
 </script>
 
